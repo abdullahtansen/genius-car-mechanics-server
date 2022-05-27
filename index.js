@@ -6,7 +6,7 @@ const cors = require("cors");
 require("dotenv").config();
 
 const app = express();
-const port = process.env.PORT || 5000;
+const port = 5000 || process.env.PORT;
 // mongodb user:genius-car
 // mongodb pass:Cc0Rjq4kPDqYdpTh
 
