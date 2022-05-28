@@ -27,7 +27,7 @@ async function run() {
   try {
     await client.connect();
     const database = client.db("carMechanic");
-    const servicesCollection = database.collection("service");
+    const servicesCollection = database.collection("services");
 
     // GET API
     app.get("/services", async (req, res) => {
